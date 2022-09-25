@@ -1,7 +1,7 @@
-/* eslint-disable import/extensions */
-import { Formik } from "formik";
+import { Form, Formik } from "formik";
 import { ProductNameField } from "form-kit/ProductNameField/ProductNameField.component";
 import { CustomButton } from "ui-kit";
+import { ProductList } from "components/ProductList/ProductList.component";
 
 interface ProductFormValues {
   product: string;
@@ -23,11 +23,12 @@ const App = () => {
         onSubmit={handleAddProduct}
         initialValues={initialValues}
       >
-        <>
+        <Form>
           <ProductNameField />
           <CustomButton />
-        </>
+        </Form>
       </Formik>
+      <ProductList />
     </div>
   );
 };
