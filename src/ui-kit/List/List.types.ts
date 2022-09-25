@@ -5,4 +5,6 @@ export interface ListItem {
 
 export interface ListProps {
   listItems: ListItem[];
+  arialabel: string;
+  buttonPositioningEdge: "end" | undefined | "start";
 }

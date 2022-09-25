@@ -25,5 +25,11 @@ export const ProductList = () => {
   ];
 
   // TODO -> we will probably pass the delete action here
-  return <List listItems={sampleData} />;
+  return (
+    <List
+      listItems={sampleData}
+      arialabel="delete"
+      buttonPositioningEdge="end"
+    />
+  );
 };
